@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+<script>
+
+                function unameValidation()
+                {
+                    var name=document.getElementById('name').value;
+                  
+                    if(name.length>=6)
+                    {
+                        document.getElementById('unameValid').innerHTML="valid";
+                    }
+                    else{
+                        document.getElementById('unameValid').innerHTML="invalid";
+                    }
+                 }
+                      function nameValidation()
+                {
+                    var name=document.getElementById('name1').value;
+                 
+                    if(name.length>6)
+                    {
+                        document.getElementById('nameValid').innerHTML="valid";
+                    }
+                    else{
+                        document.getElementById('nameValid').innerHTML="invalid";
+                    }
+                 }
+                function password1Validation()
+                {
+                    var password1=document.getElementById('pwd').value;
+                  
+                    if(password1.length>6)
+                    {
+                        document.getElementById('pwdValid').innerHTML="good";
+                    }
+                    else{
+                        document.getElementById('pwdValid').innerHTML="poor";
+                    }
+                }
+            </script>
+</head>
+<body>
+<form action="Register">
+<center>
+        <table>
+            <tr>
+                <td>User Name:</td>
+                <td><input type="text" name="uname" placeholder="Enter user name" id="name" required="required" onkeyup="unameValidation()"></td>
+                <td><p id="unameValid" style="color: red"></p></td>
+            </tr>
+         
+            <tr>
+                 <td>Password:</td>
+                 <td><input type="password" name="upwd" placeholder="Enter password" id="pwd" required="required" onkeyup="passwordValidation()"></td>
+                    <td><p id="pwd1Valid" style="color: red"></p></td>
+            </tr>
+             <tr>
+                <td> Name:</td>
+                <td><input type="text" name="name" placeholder="Enter name" id="name1" required="required" onkeyup="nameValidation()"></td>
+                <td><p id="nameValid" style="color: red"></p></td>
+            </tr>
+         
+            <tr>
+            <td><input type="submit" value="Register" > </td>
+            </tr>
+        
+        </table>
+        </center>
+        </form>
+</body>
+</html>

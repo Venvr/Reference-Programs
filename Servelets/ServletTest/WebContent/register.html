@@ -1,0 +1,107 @@
+<html>
+    <body>
+        <head>
+              
+            
+        </head>
+
+        <form action="welcome">
+                <style>
+                  cust-text-rounded {border: 50px}
+                </style>
+            
+            <center>
+                <h1>Register Here</h1>
+     <table>
+       
+            <tr class="form-group">
+              <td>User Name</td>
+              <td><input type="text" name="uname" placeholder="Enter user name" onkeyup="user()" class="form-control "> <p id="u"></p></td>
+            </tr>
+
+            <tr class="form-group">
+              <td>Name</td>
+              <td><input type="text" name="name" placeholder="Enter name" onkeyup="checkname()"class="form-control"   ><p id="nc"></p></td>
+            </tr>
+
+            <tr class="form-group">
+              <td>Email</td>
+              <td><input type="email" name="mail" placeholder="Enter email" required class="form-control"  ></td>
+            </tr>
+
+            <tr class="form-group">
+              <td>Password</td>
+              <td><input type="password" name="psw" placeholder="Enter password" class="form-control" required ></td>
+              <div class="valid-feedback">Valid.</div>
+             <div class="invalid-feedback">Please fill out this field.</div>
+            </tr>
+
+            <tr class="form-group">
+              <td>Repeat Password</td>
+              <td><input type="password" name="psw1" placeholder="Re-Enter password" onkeyup="passval()" class="form-control"  ><p id="re"></p></td>
+              <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            </tr>
+ 
+            <tr class="form-group">
+              <td>DOB</td>
+              <td><input type="date" name="dob"placeholder="Enter dob" class="form-control"></td>
+            </tr>
+    
+            <tr class="radio">
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female" checked>Female<br>
+                <input type="radio" name="gender" value="other">Other</td><br>
+            </tr>
+
+                <tr class="checkbox-inline" >
+                <td>Languages Known</td>
+                <td><label class="checkbox-inline"><input type="checkbox" value="">English</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Kannada</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Hindi</label>
+               
+            </tr>
+
+            <tr class="form-group">
+                <td>Contact Number</td>
+                <td><input type="number" name="number"placeholder="Enter your number" onkeyup="numvalid()"  class="form-rounded"> <p id="nv"></p></td>
+            </tr>
+            
+            <tr class="form-group">
+                <td>Upload</td>
+                    <td><input type="file" name="files"></td>
+            </tr>
+         
+            <tr class="form-group">
+                <td>Favourite color :</td>
+                <td><input type="color" placeholder ="Enter Fav color" ></td>                
+            </tr>
+        
+            <tr class="form-group">
+                <td>Download File</td>
+                <td><button>
+                <a href="C:\Users\vennrao\Desktop\corejava\Encapsulation in jaVa.pptx">Download</a></button></td>
+                </tr>
+            
+            <tr class="form-group">
+                <td>Qualification :</td>
+                <td><select name="Qualification">
+                        <option value="Degree">Degree</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="BE">BE</option>
+                        </select></td>                        
+            </tr>
+
+             <tr>
+                <td>
+               <button type="submit" class="btn btn-success">Register</button>
+               <button type="button" class="btn btn-warning">Clear</button>
+               <button type="button" class="btn btn-info">Download</button>
+             </tr>
+
+        </center>
+        </form>
+     </table>
+    </body>
+</html>
